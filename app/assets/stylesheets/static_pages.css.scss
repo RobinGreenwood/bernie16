@@ -1,0 +1,94 @@
+.page{
+  background-color: #147ed7;
+  width: 100%;
+  min-height: 900px;
+  .logo{
+    width: 120px;
+    margin: 10px auto;
+    display: block;
+      img{
+      width: 100%;
+    }
+  }
+  .letter{
+    /*border:2px dashed #fff;*/
+    border-radius: 5px;
+    padding: 20px;
+    display: inline-block;
+    width:100%;
+    .display{
+      border-radius: 5px;
+      margin-bottom: 30px;
+      h1{
+        color: #fff;
+        font-weight: 200;
+        font-size: 2.8em;
+      }
+    }
+  }
+
+  .fa{
+    color: #fff;
+  }
+  .fa-quote-right{
+    top: -20px;
+    position: relative;
+
+  }
+  .letter-input{
+    margin-top: 20px;
+    height: 100px;
+    max-height: 140px;
+    min-height: 140px;
+  }
+  .input-group{
+    margin-top: 20px;
+  }
+  .input-group-addon{
+    background-color: transparent;
+  }
+  .btn-send{
+    background-color: #ea504e;
+    color: #fff;
+    margin-top: 20px;
+    padding-top: 11px;
+    height: 50px;
+  }
+  .table{
+    margin-top: 30px;
+  }
+  .title{
+    width: 330px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.8em;
+    font-weight: 200;
+    letter-spacing: 0.8px;
+    position: relative;
+  }
+  .title span:before,
+  .title span:after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px dashed white;
+    top: 10px;
+    width: 230px;
+  }
+  .title span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  .title span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+}
+.information{
+  margin-top: 100px;
+  display: inline-block;
+  width: 100%;
+  .nav-pills{
+    width: 100%;
+  }
+}

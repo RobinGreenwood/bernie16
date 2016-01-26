@@ -1,0 +1,71 @@
+<div class="page">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="logo"><%= image_tag 'logo.svg' %></div>
+      <p class="title"><span>Send a note about Berniie to someone in your family</span><p>
+
+      <form name="myForm" ng-controller="LetterController" ng-submit="send()">
+
+        <div class="letter">
+          <i class="fa fa-quote-left fa-3x fa-pull-left"></i>
+          <div class="display"><h1>{{text}}</h1></div>
+          <i class="fa fa-quote-right fa-1x fa-pull-right"></i>
+        </div>
+
+
+
+        <div class="col-md-6 col-md-offset-3">
+
+            <div class="input-group margin-bottom-sm">
+              <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+              <input ng-model="getter" class="form-control" type="email" placeholder="Their email" required>
+            </div>
+            <div class="input-group margin-bottom-sm">
+              <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+              <input ng-model="sender" class="form-control" type="email" placeholder="Your email" required>
+            </div>
+            <textarea ng-model="text" class="form-control letter-input" ng-click="text = null" type="text" name="input" ng-trim="false">
+            </textarea>
+            <input type="submit" id="submit" value="Submit" class="btn btn-block btn-send"/>
+
+        </div>
+
+
+
+<!--         <div class="col-md-10 col-md-offset-1">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Votes</th>
+                <th>Hilary</th>
+                <th>Sanders</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Voted against the Irag War.</th>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Voted against bailing out Wall Street</th>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Voted against the 2001 Patriot Act</th>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+               <tr>
+                <th scope="row">Supported the recognition of gay marriage, before becoming a 2016 Presidential candidate</th>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div> -->
+      </form>
+    </div>
+  </div>
+</div>
