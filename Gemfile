@@ -25,6 +25,7 @@ gem 'sass-rails', '~> 5.0', '>= 5.0.4'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '~> 2.7', '>= 2.7.2'
 # gem 'uglifier', '>= 1.3.0'
+gem 'sprockets_better_errors'
 
 # Use CoffeeScript for .js.coffee assets and views
 # gem 'coffee-rails', '~> 4.0.0'
